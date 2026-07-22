@@ -417,47 +417,65 @@ body{
       WhatsApp Button
 ========================== */
 
-.whatsapp-btn{
-
+.whatsapp-chat{
     position:fixed;
-
+    bottom:25px;
     right:25px;
 
-    bottom:25px;
-
-    width:65px;
-
-    height:65px;
-
-    border-radius:50%;
+    display:flex;
+    align-items:center;
+    gap:12px;
 
     background:#25D366;
+    color:#fff;
+    text-decoration:none;
 
-    display:flex;
+    padding:15px 22px;
+    border-radius:50px;
 
-    justify-content:center;
+    box-shadow:0 10px 25px rgba(0,0,0,.25);
 
-    align-items:center;
-
-    box-shadow:0 8px 20px rgba(0,0,0,.3);
+    font-size:20px;
+    font-weight:bold;
 
     z-index:9999;
 
     transition:.3s;
-
 }
 
-.whatsapp-btn:hover{
-
-    transform:scale(1.1);
-
+.whatsapp-chat:hover{
+    transform:scale(1.05);
+    background:#1ebe5d;
 }
 
-.whatsapp-btn img{
+.whatsapp-chat img{
+    width:30px;
+    height:30px;
+}
 
-    width:38px;
+.whatsapp-chat span{
+    white-space:nowrap;
+}
 
-    height:38px;
+@media(max-width:768px){
+
+    .whatsapp-chat{
+
+        right:15px;
+        bottom:20px;
+
+        padding:12px 18px;
+
+        font-size:16px;
+
+    }
+
+    .whatsapp-chat img{
+
+        width:24px;
+        height:24px;
+
+    }
 
 }
 
